@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 247.0, 79.0, 760.0, 772.0 ],
+		"rect" : [ 115.0, 79.0, 760.0, 772.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,44 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-192",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 969.70001220703125, 17.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-191",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 995.20001220703125, 57.75, 32.5, 23.0 ],
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-190",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 1024.0, 165.0, 45.0, 22.0 ],
+					"text" : "100ths"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-189",
 					"maxclass" : "newobj",
@@ -494,8 +532,8 @@
 									"patching_rect" : [ 75.0, 270.0, 89.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"enabled" : [ 1 ],
-										"pitchshift" : [ 0.91912522196653 ],
-										"pitchshiftcent" : [ -146 ],
+										"pitchshift" : [ 0.889870105846758 ],
+										"pitchshiftcent" : [ -202 ],
 										"quality" : "basic",
 										"reportlatency" : 0,
 										"usecents" : 0
@@ -573,7 +611,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 110.0, 5.0, 30.0, 30.0 ]
 								}
 
@@ -773,7 +811,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 661.0, 1597.0, 279.0, 116.0 ],
+					"patching_rect" : [ 661.0, 1595.0, 279.0, 116.0 ],
 					"varname" : "bp.Feedback Delay[2]",
 					"viewvisibility" : 1
 				}
@@ -1010,7 +1048,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 1363.5, 926.262451171875, 190.0, 116.0 ],
+					"patching_rect" : [ 1361.5, 926.262451171875, 190.0, 116.0 ],
 					"varname" : "bp.Reverb 1[2]",
 					"viewvisibility" : 1
 				}
@@ -1762,8 +1800,8 @@
 									"patching_rect" : [ 75.0, 270.0, 89.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"enabled" : [ 1 ],
-										"pitchshift" : [ 1.235418637126929 ],
-										"pitchshiftcent" : [ 366 ],
+										"pitchshift" : [ 1.076115799830543 ],
+										"pitchshiftcent" : [ 127 ],
 										"quality" : "basic",
 										"reportlatency" : 0,
 										"usecents" : 0
@@ -1841,7 +1879,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 110.0, 5.0, 30.0, 30.0 ]
 								}
 
@@ -1952,18 +1990,6 @@
 					}
 ,
 					"text" : "p pitchshifting"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-107",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 947.899962999999957, 34.5, 77.0, 22.0 ],
-					"text" : "r presetNum"
 				}
 
 			}
@@ -4749,6 +4775,7 @@
 			}
 , 			{
 				"box" : 				{
+					"autorestore" : "LessCreepy.json",
 					"fontname" : "Arial",
 					"fontsize" : 8.0,
 					"hidden" : 1,
@@ -4763,7 +4790,7 @@
 						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 583, 69, 1006, 365 ]
+						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
 					"text" : "pattrstorage storage @savemode 3 @greedy 1",
@@ -4790,7 +4817,7 @@
 					}
 ,
 					"text" : "autopattr @greedy 1",
-					"varname" : "u040001080"
+					"varname" : "u069007072"
 				}
 
 			}
@@ -5007,13 +5034,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
-					"source" : [ "obj-107", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-115", 0 ],
 					"midpoints" : [ 909.700012000000015, 455.679138000000023, 973.699951000000056, 455.679138000000023, 973.699951000000056, 406.679138000000023, 1011.700012000000015, 406.679138000000023 ],
 					"source" : [ "obj-108", 0 ]
@@ -5060,13 +5080,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
 					"source" : [ "obj-118", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-119", 0 ]
 				}
 
 			}
@@ -5188,13 +5201,6 @@
 					"midpoints" : [ 1169.0, 893.921142578125, 1183.0, 893.921142578125 ],
 					"order" : 2,
 					"source" : [ "obj-132", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-137", 0 ],
-					"source" : [ "obj-134", 0 ]
 				}
 
 			}
@@ -5587,7 +5593,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-119", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-168", 0 ]
 				}
 
@@ -5742,6 +5748,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-191", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-191", 0 ],
+					"source" : [ "obj-192", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
 					"hidden" : 1,
 					"source" : [ "obj-20", 0 ]
@@ -5818,7 +5838,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-134", 0 ],
+					"destination" : [ "obj-137", 0 ],
 					"source" : [ "obj-38", 0 ]
 				}
 
@@ -6381,8 +6401,8 @@
 			"obj-119::obj-31" : [ "Gain[2]", "Gain", 0 ],
 			"obj-9::obj-47" : [ "bypass[4]", "bypass", 0 ],
 			"obj-37::obj-957" : [ "duration.l", "duration.l", 0 ],
-			"obj-15::obj-9" : [ "time", "Time", 0 ],
 			"obj-15::obj-25" : [ "LPF", "LPF", 0 ],
+			"obj-15::obj-9" : [ "time", "Time", 0 ],
 			"obj-15::obj-21" : [ "HPF", "HPF", 0 ],
 			"obj-3::obj-28" : [ "Mix", "Mix", 0 ],
 			"obj-37::obj-9" : [ "delay_right", "delay_right", 0 ],
@@ -6429,6 +6449,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "LessCreepy.json",
+				"bootpath" : "~/Desktop/Kaleidoscope/maxPatches/MaxPatch",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "bp.Reverb 1.maxpat",
 				"bootpath" : "C74:/packages/BEAP/clippings/BEAP/Effects",
 				"type" : "JSON",
@@ -6469,6 +6496,13 @@
 				"name" : "helpargs.js",
 				"bootpath" : "C74:/help/resources",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "100ths.maxpat",
+				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/legacy-examples/synths/fm-surfer-folder/lib",
+				"patcherrelativepath" : "../../../../Library/Application Support/Cycling '74/Max 8/Examples/legacy-examples/synths/fm-surfer-folder/lib",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],

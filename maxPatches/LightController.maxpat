@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 430.0, 270.0, 727.0, 512.0 ],
+		"rect" : [ 280.0, 164.0, 727.0, 512.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -98,7 +98,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 634.0, 115.0, 652.0, 653.0 ],
+										"rect" : [ 634.0, 115.0, 428.0, 653.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -125,6 +125,7 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
+										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-4",
@@ -369,7 +370,7 @@
 , 							{
 								"box" : 								{
 									"angle" : 0.0,
-									"bgcolor" : [ 0.0, 0.811841722487287, 1.0, 1.0 ],
+									"bgcolor" : [ 0.0, 0.311841713197227, 1.0, 1.0 ],
 									"border" : 1,
 									"id" : "obj-32",
 									"maxclass" : "panel",
