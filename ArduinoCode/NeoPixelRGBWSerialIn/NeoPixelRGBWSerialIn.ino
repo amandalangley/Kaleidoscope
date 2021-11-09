@@ -31,7 +31,7 @@ void setup() {
 void loop() {
   if (Serial.available() > 0) {   // if there's serial data,
     if (Serial.read() == 'C') {   // and the first byte is C,
-      int pixel = Serial.parseInt();// listen for an ASCII numeric string
+      //int pixel = Serial.parseInt();// listen for an ASCII numeric string
       int r = Serial.parseInt();  // listen for another ASCII numeric string
       int g = Serial.parseInt();  // listen for another ASCII numeric string
       int b = Serial.parseInt();  // listen for another ASCII numeric string

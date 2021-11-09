@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 115.0, 79.0, 760.0, 772.0 ],
+		"rect" : [ 204.0, 79.0, 760.0, 772.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,20 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-193",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 835.0, 15.0, 51.0, 23.0 ],
+					"text" : "store 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-192",
 					"maxclass" : "newobj",
@@ -532,8 +546,8 @@
 									"patching_rect" : [ 75.0, 270.0, 89.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"enabled" : [ 1 ],
-										"pitchshift" : [ 0.889870105846758 ],
-										"pitchshiftcent" : [ -202 ],
+										"pitchshift" : [ 1.098727280292079 ],
+										"pitchshiftcent" : [ 163 ],
 										"quality" : "basic",
 										"reportlatency" : 0,
 										"usecents" : 0
@@ -1800,8 +1814,8 @@
 									"patching_rect" : [ 75.0, 270.0, 89.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"enabled" : [ 1 ],
-										"pitchshift" : [ 1.076115799830543 ],
-										"pitchshiftcent" : [ 127 ],
+										"pitchshift" : [ 0.900730030251112 ],
+										"pitchshiftcent" : [ -181 ],
 										"quality" : "basic",
 										"reportlatency" : 0,
 										"usecents" : 0
@@ -4583,7 +4597,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1088.994263000000046, 156.5, 113.0, 22.0 ],
+					"patching_rect" : [ 1101.9942626953125, 190.5, 113.0, 22.0 ],
 					"text" : "view presets",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
@@ -4610,7 +4624,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1165.994263000000046, 131.25, 36.0, 22.0 ],
+					"patching_rect" : [ 1307.699951171875, 116.25, 36.0, 22.0 ],
 					"text" : "write",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
@@ -4637,7 +4651,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1088.994263000000046, 131.25, 35.0, 22.0 ],
+					"patching_rect" : [ 1246.699951171875, 147.25, 35.0, 22.0 ],
 					"text" : "read",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
@@ -5757,6 +5771,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-191", 0 ],
 					"source" : [ "obj-192", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-193", 0 ]
 				}
 
 			}
